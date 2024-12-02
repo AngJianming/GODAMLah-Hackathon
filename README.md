@@ -1,2 +1,2 @@
-# GODAMLah-Hackathon
+# GODAMLah Hackathon
 This repo is for the GODAMLah Hackathon and our team name - Иewbies
