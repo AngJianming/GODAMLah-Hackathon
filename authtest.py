@@ -22,15 +22,26 @@ def register(username,email,password):
     return response
     
 def sign_in(email,password):
-    response=supabase.auth.sign_in_with_password(
-        {
-            "email":email,
-            "password":password
-        }
-    )
-    return response
+    try:
+        response=supabase.auth.sign_in_with_password(
+            {
+                "email":email,
+                "password":password
+            }
+        )
+        print("Success")
+        
+    except Exception as e:
+        print("Error",e)
+
+        
 
 def sign_out():
-    response=supabase.auth.sign_out
+    try:
+        response=supabase.auth.sign_out
+        print("Signed Out.")
+    except Exception as e:
+        print(e)
     
-print(sign_in("wenzhe1423@gmail.com","123456"))
+#sign_in("wenzhe1423@gmail.com","123456")
+sign_out()
