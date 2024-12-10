@@ -37,6 +37,18 @@ def sign_in(email,password):
     except Exception as e:
         print("Error",e)
 
+#Use oauth to sign in. If success run the redirect to. (Not sure if works in front end)
+def sign_in_oauth():
+    try:
+        response=supabase.auth.sign_in_with_oauth({
+            "provider":"google",
+            "provider":"github",
+            "options":{
+                "redirect_to":"https://pageAfterSuccessfulLogin"
+            }
+        })
+    except Exception as e:
+        print (e)
         
 
 def sign_out():
@@ -46,3 +58,4 @@ def sign_out():
     except Exception as e:
         print(e)
     
+sign_in_oauth()
