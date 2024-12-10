@@ -16,15 +16,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/Services/page.js"
     ],
-    "/Marketplace/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/Marketplace/page.js"
-    ],
     "/About/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/About/page.js"
+    ],
+    "/Marketplace/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/Marketplace/page.js"
     ],
     "/Register/page": [
       "static/chunks/webpack.js",
@@ -35,16 +35,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/Login/page.js"
-    ],
-    "/Register/IdVerification/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/Register/IdVerification/page.js"
-    ],
-    "/_not-found/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
     ]
   }
 }
