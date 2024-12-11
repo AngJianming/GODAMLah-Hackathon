@@ -10,7 +10,7 @@ key:str=os.environ.get("supabase_key")
 supabase:Client=create_client(url,key)
 
 #password should be string
-#After this part, it will send a confirmation email 
+#After this part, it will send a confirmation email
 def register(username,email,password):
     try:
         response=supabase.auth.sign_up(
@@ -23,6 +23,7 @@ def register(username,email,password):
         print("Registered Succesfully")
     except Exception as e:
         print(e)
+        #Show Notification
     
 def sign_in(email,password):
     try:
@@ -58,4 +59,5 @@ def sign_out():
     except Exception as e:
         print(e)
     
-sign_in_oauth()
+sign_out()
+
