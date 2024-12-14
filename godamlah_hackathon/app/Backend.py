@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-import auth
+import godamlah_hackathon.app.auth as auth
 
 #flask init
 app=Flask(__name__)
