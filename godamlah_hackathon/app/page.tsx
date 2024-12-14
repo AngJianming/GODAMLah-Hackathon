@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import Persona from "./Persona";
 
 export default function Home() {
   return (
@@ -19,56 +20,27 @@ export default function Home() {
             <div className="flex flex-1 items-center justify-center">
               <div className="hidden sm:block">
                 <div className="flex space-x-4">
-                  <Link
-                    href="/Services"
-                    className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-                  >
-                    Services
-                  </Link>
-                  <Link
-                    href="/About"
-                    className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-                  >
-                    About
-                  </Link>
-                  <Link
-                    href="/Marketplace"
-                    className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-                  >
-                    Marketplace
-                  </Link>
-                  <Link
-                    href="#"
-                    className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-                  >
-                    FAQ
-                  </Link>
+                  <Link href="/Services" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Services</Link>
+                  <Link href="/About" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</Link>
+                  <Link href="/Marketplace" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Marketplace</Link>
+                  <Link href="#" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">FAQ</Link>
                 </div>
               </div>
             </div>
 
             {/* Right Section */}
             <div className="flex flex-1 items-center justify-end">
-              <Link
-                href="/Register"
-                className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-              >
-                Register
-              </Link>
-              <Link
-                href="/Login"
-                className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-              >
-                Login
-              </Link>
+              <Link href="/Register" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Register</Link>
+              <Link href="/Login" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Login</Link>
             </div>
           </div>
         </div>
       </nav>
 
-      <div className="flex justify-center items-center h-screen text-6xl">
-        Know Your Customer
-      </div>
+      <div className="flex justify-center items-center h-screen text-6xl">Know Your Customer</div>
+
+      {/* Persona Component */}
+      <Persona />
     </div>
   );
 }
