@@ -1,6 +1,20 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import "./register.css";
+import axios from "axios"
+
+//Define in React Function Syntax, Type Casting due to Type Safety
+const sign_in = async () =>{
+  let username=(document.getElementById("username") as HTMLInputElement).value;
+  let email=(document.getElementById("email") as HTMLInputElement).value;
+  let password=(document.getElementById("psw") as HTMLInputElement).value;
+
+  let post=await axios.post("http://127.0.0.1:5000",{"username":username,"password":password,"email":email})
+  console.log(post.status)
+
+}
+
 
 const Register = () => {
   return (
@@ -60,7 +74,10 @@ const Register = () => {
           <a href="#">Terms & Privacy</a>.
         </p>
         <Link href="/Register/IdVerification">
-          <button type="submit" className="registerbtn">
+          <button 
+          type="submit" 
+          onClick={sign_in}
+          className="registerbtn">
             Register
           </button>
         </Link>
