@@ -16,4 +16,3 @@ response = requests.get(
 
 if response.status_code == 200:
     inquiry_data = response.json()
-    # Process the inquiry data as needed
