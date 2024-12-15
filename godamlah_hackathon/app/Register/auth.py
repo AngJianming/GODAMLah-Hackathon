@@ -59,5 +59,3 @@ def sign_out():
     except Exception as e:
         print(e)
     
-sign_out()
-
