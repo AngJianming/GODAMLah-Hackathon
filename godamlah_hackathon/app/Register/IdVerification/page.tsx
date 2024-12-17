@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+import React from "react";
+
+const Id = () => {
+  return <div>Scan your ID Card</div>;
+};
+
+export default Id;
+=======
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -43,3 +52,4 @@ export default function IdVerification() {
     </div>
   );
 }
+>>>>>>> main
