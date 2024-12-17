@@ -1,7 +1,33 @@
+<<<<<<< HEAD
 import Image from "next/image";
+=======
+"use client";
+import React, { useEffect } from "react";
+import { useRouter } from "next/navigation";
+import { Client } from "persona";
+
+export default function Home() {
+  const router = useRouter();
+
+  useEffect(() => {
+    const personaClient = new Client({
+      templateId: "itmpl_1MNWv1ds31yPbSj2bPrpmYAo7DvT",
+      environment: "sandbox",
+      onReady: () => console.log("Persona ready"),
+      onComplete: (inquiryId) => {
+        console.log("Verification complete:", inquiryId);
+        router.push("/Register");
+      },
+      onError: (error) => console.error("Persona error:", error),
+    });
+
+    personaClient.open();
+  }, [router]);
+>>>>>>> parent of da3dee3 (bug fixed)
 
 export default function Home() {
   return (
+<<<<<<< HEAD
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Image
@@ -96,6 +122,10 @@ export default function Home() {
           Go to nextjs.org →
         </a>
       </footer>
+=======
+    <div className="flex justify-center items-center h-screen text-gray-700">
+      <p>Loading identity verification...</p>
+>>>>>>> parent of da3dee3 (bug fixed)
     </div>
   );
 }
