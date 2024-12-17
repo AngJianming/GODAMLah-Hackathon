@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 import os
 from supabase import create_client, Client
 
-env_path = Path('.') / 'config' / 'my_env_file.env'
+env_path = Path('.') / 'config' / '.env'
 load_dotenv(dotenv_path=env_path)
 
 # Load environment variables from .env file
