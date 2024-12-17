@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import Image from "next/image";
 =======
 "use client";
@@ -7,26 +8,47 @@ import { useRouter } from "next/navigation";
 import { Client } from "persona";
 
 export default function Home() {
+=======
+"use client";
+
+import React, { useEffect } from "react";
+import { Client } from "persona";
+import { useRouter } from "next/navigation";
+
+export default function PersonaVerification() {
+>>>>>>> main
   const router = useRouter();
 
   useEffect(() => {
     const personaClient = new Client({
+<<<<<<< HEAD
       templateId: "itmpl_1MNWv1ds31yPbSj2bPrpmYAo7DvT",
       environment: "sandbox",
       onReady: () => console.log("Persona ready"),
       onComplete: (inquiryId) => {
         console.log("Verification complete:", inquiryId);
         router.push("/Register");
+=======
+      templateId: "itmpl_1MNWv1ds31yPbSj2bPrpmYAo7DvT", // Replace with your Template ID
+      environment: "sandbox", // Change to "production" for live environments
+      onReady: () => console.log("Persona is ready"),
+      onComplete: (inquiryId) => {
+        console.log("Verification complete:", inquiryId);
+        router.push("/Register"); // Redirect to the registration form
+>>>>>>> main
       },
       onError: (error) => console.error("Persona error:", error),
     });
 
     personaClient.open();
   }, [router]);
+<<<<<<< HEAD
 >>>>>>> parent of da3dee3 (bug fixed)
+=======
+>>>>>>> main
 
-export default function Home() {
   return (
+<<<<<<< HEAD
 <<<<<<< HEAD
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
@@ -126,6 +148,11 @@ export default function Home() {
     <div className="flex justify-center items-center h-screen text-gray-700">
       <p>Loading identity verification...</p>
 >>>>>>> parent of da3dee3 (bug fixed)
+=======
+    <div className="flex justify-center items-center h-screen bg-gray-100">
+      <p>Loading Persona verification...</p>
+>>>>>>> main
     </div>
   );
 }
+

@@ -3,7 +3,7 @@ from flask_cors import CORS
 import auth
 
 #flask init
-app=Flask(_name_)
+app=Flask(__name__)
 link="http://127.0.0.1:5000"
 CORS(app)
 
@@ -20,4 +20,8 @@ def handle_request():
         else:
             return "NO Data"
     else:
-        return "LOCAL SERVER"
+        return "LOCAL SERVER"
+    
+
+
+
