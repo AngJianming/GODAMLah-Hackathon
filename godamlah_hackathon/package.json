@@ -9,29 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "react": "19.0.0-rc-66855b96-20241106",
-    "react-dom": "19.0.0-rc-66855b96-20241106",
-    "next": "15.0.3"
-=======
     "axios": "^1.7.9",
     "next": "^15.0.3",
     "persona": "^5.1.2",
     "react": "^19.0.0-rc-66855b96-20241106",
     "react-dom": "^19.0.0-rc-66855b96-20241106"
->>>>>>> parent of da3dee3 (bug fixed)
-=======
-    "autoprefixer": "^10.4.20",
-    "axios": "^1.7.9",
-    "flask": "^0.2.10",
-    "next": "^15.0.3",
-    "persona": "^5.1.2",
-    "postcss": "^8.4.49",
-    "react": "^19.0.0-rc-66855b96-20241106",
-    "react-dom": "^19.0.0-rc-66855b96-20241106",
-    "tailwindcss": "^3.4.16"
->>>>>>> main
   },
   "devDependencies": {
     "@types/node": "20.17.9",
@@ -39,18 +21,9 @@
     "@types/react-dom": "^18",
     "@types/styled-components": "^5.1.34",
     "eslint": "^8",
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "eslint-config-next": "15.0.3"
-=======
     "eslint-config-next": "15.0.3",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "5.7.2"
->>>>>>> parent of da3dee3 (bug fixed)
-=======
-    "eslint-config-next": "15.0.3",
-    "typescript": "5.7.2"
->>>>>>> main
   }
 }

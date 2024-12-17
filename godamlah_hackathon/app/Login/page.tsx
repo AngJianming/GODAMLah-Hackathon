@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import "./Login.css";
+import "./login.css";
 
 const Login = () => {
   return (

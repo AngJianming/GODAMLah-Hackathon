@@ -1,135 +1,81 @@
-/* Center the form on the page */
-form {
-<<<<<<< HEAD
-  width: 350px; /* Fixed width for the form */
-  margin: 50px auto; /* Center the form horizontally and add vertical spacing */
-  padding: 20px; /* Padding inside the form for spacing */
-  border: 1px solid #ccc; /* Add a light gray border */
-  border-radius: 8px; /* Rounded corners for the form */
-  background-color: #0a0000; /* Light background for the form */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+/* Apply a background image to the body */
+body {
+  background-image: url('/images.gif'); /* Correct path for your image */
+  background-size: cover; /* Ensures the image covers the entire screen */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  font-family: 'Arial', sans-serif; /* Clean font style for better readability */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Ensure body takes up full height */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
 }
 
-/* Container spacing */
-.container {
-  margin: 15px 0; /* Spacing between sections inside the form */
+/* Center the form on the page */
+form {
+  width: 400px; /* Increase the width */
+  min-height: 500px; /* Set a minimum height for vertical length */
+  margin: 50px auto; /* Center the form horizontally and add vertical spacing */
+  padding: 30px; /* Add more padding inside the form for spacing */
+  border: 1px solid #ccc; /* Light gray border for contrast */
+  border-radius: 12px; /* Slightly larger rounded corners for a modern look */
+  background-color: #ffffff; /* Set form background to white */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+  box-sizing: border-box; /* Include padding and border in the element's dimensions */
 }
 
 /* Input fields */
 input[type="text"],
 input[type="password"] {
-  width: 100%; /* Make inputs take the full width of the form */
-  padding: 10px; /* Add padding inside inputs */
-  margin: 8px 0; /* Spacing between inputs */
-  border: 1px solid #ccc; /* Light gray border for inputs */
-  border-radius: 4px; /* Slight rounding for inputs */
-  box-sizing: border-box; /* Include padding and border in element's width */
+  width: 100%; /* Make inputs take up the full width of the form */
+  padding: 15px; /* Larger padding for inputs */
+  margin: 15px 0; /* Increase spacing between inputs */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 6px; /* Slight rounding */
+  box-sizing: border-box; /* Include border and padding in element size */
+  font-size: 16px; /* Make input text larger */
 }
 
-/* Buttons */
+/* Button styling */
 button {
-  background-color: #4caf50; /* Green button background */
-  color: white; /* White button text */
-  padding: 10px 15px; /* Adjust button padding */
-  margin: 10px 0; /* Spacing around buttons */
+  background-color: #4caf50; /* Green background */
+  color: white; /* White text */
+  padding: 15px; /* Add more padding for larger buttons */
+  margin-top: 20px; /* Space between inputs and button */
   border: none; /* Remove default border */
-  border-radius: 4px; /* Rounded corners for buttons */
-  cursor: pointer; /* Pointer cursor for buttons */
-  width: 100%; /* Full width buttons */
-  font-size: 16px; /* Larger font for buttons */
+  border-radius: 6px; /* Rounded corners */
+  font-size: 18px; /* Larger font size for better visibility */
+  cursor: pointer; /* Pointer cursor on hover */
+  width: 100%; /* Make the button stretch to full form width */
+  text-transform: uppercase; /* Uppercase button text for emphasis */
+  font-weight: bold; /* Make button text bold */
 }
 
-/* Hover effect for buttons */
 button:hover {
-  background-color: #45a049; /* Darker green on hover */
+  background-color: #45a049; /* Darker green when hovering */
 }
 
-/* Checkbox */
+/* Checkbox container */
 label input[type="checkbox"] {
-  margin-right: 10px; /* Space between checkbox and text */
+  margin-right: 10px; /* Space between the checkbox and label */
 }
 
+/* White background for horizontal links section */
 .horizontal-links {
-  display: flex; /* Enable flexbox layout */
-  justify-content: space-between; /* Distribute space evenly between items */
-  align-items: center; /* Align items vertically */
-  gap: 10px; /* Optional: Add spacing between items */
+  display: flex; /* Enable flexbox */
+  justify-content: space-between; /* Distribute space evenly */
+  margin-top: 20px; /* Add spacing above the links */
 }
 
-.horizontal-links {
+.horizontal-links a {
   text-decoration: none; /* Remove underline */
-  color: #ffffff; /* Set the color to white */
-  font-size: 14px; /* Adjust font size */
+  color: #4caf50; /* Green text for links */
+  font-size: 14px; /* Slightly smaller font size */
 }
 
 .psw {
-  text-decoration: none; /* Remove underline for the forgot password link */
-  color: #ffffff; /* Set the color to white */
+  text-decoration: none; /* Remove underline */
+  color: #4caf50; /* Green text for forgot password */
 }
-=======
-    width: 350px; /* Fixed width for the form */
-    margin: 50px auto; /* Center the form horizontally and add vertical spacing */
-    padding: 20px; /* Padding inside the form for spacing */
-    border: 1px solid #ccc; /* Add a light gray border */
-    border-radius: 8px; /* Rounded corners for the form */
-    background-color: #0a0000; /* Light background for the form */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  }
-  
-  /* Container spacing */
-  .container {
-    margin: 15px 0; /* Spacing between sections inside the form */
-  }
-  
-  /* Input fields */
-  input[type="text"],
-  input[type="password"] {
-    width: 100%; /* Make inputs take the full width of the form */
-    padding: 10px; /* Add padding inside inputs */
-    margin: 8px 0; /* Spacing between inputs */
-    border: 1px solid #ccc; /* Light gray border for inputs */
-    border-radius: 4px; /* Slight rounding for inputs */
-    box-sizing: border-box; /* Include padding and border in element's width */
-  }
-  
-  /* Buttons */
-  button {
-    background-color: #4caf50; /* Green button background */
-    color: white; /* White button text */
-    padding: 10px 15px; /* Adjust button padding */
-    margin: 10px 0; /* Spacing around buttons */
-    border: none; /* Remove default border */
-    border-radius: 4px; /* Rounded corners for buttons */
-    cursor: pointer; /* Pointer cursor for buttons */
-    width: 100%; /* Full width buttons */
-    font-size: 16px; /* Larger font for buttons */
-  }
-  
-  /* Hover effect for buttons */
-  button:hover {
-    background-color: #45a049; /* Darker green on hover */
-  }
-  
-  /* Checkbox */
-  label input[type="checkbox"] {
-    margin-right: 10px; /* Space between checkbox and text */
-  }
-  
-  .horizontal-links {
-    display: flex; /* Enable flexbox layout */
-    justify-content: space-between; /* Distribute space evenly between items */
-    align-items: center; /* Align items vertically */
-    gap: 10px; /* Optional: Add spacing between items */
-  }
-  
-  .horizontal-links {
-    text-decoration: none; /* Remove underline */
-    color: #ffffff; /* Set the color to white */
-    font-size: 14px; /* Adjust font size */
-  }
-  
-  .psw {
-    text-decoration: none; /* Remove underline for the forgot password link */
-    color: #ffffff; /* Set the color to white */
-  }
->>>>>>> main
