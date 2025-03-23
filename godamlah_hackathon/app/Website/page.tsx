@@ -21,7 +21,7 @@ export default function HomePage() {
             <li><a href="#">About Us</a></li>
             <li><a href="#">News</a></li>
             <li><a href="#">Contact</a></li>
-            <li><Link href="/Persona">Invest</Link></li>
+            <li><Link href="/Register">Register</Link></li>
           </ul>
         </nav>
       </header>
